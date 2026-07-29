@@ -1,0 +1,231 @@
+<!doctype html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#ffffff" />
+    <title>Главная ЖН — веб-прототип</title>
+    <link rel="stylesheet" href="styles.css" />
+    <script src="app.js" defer></script>
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="header-cluster header-cluster--start">
+        <a class="brand" href="#" aria-label="A101 — на главную">
+          <img src="assets/logo-a101.svg" alt="" />
+        </a>
+        <button class="category-control" type="button">
+          <span>Жилая</span>
+          <img class="ui-icon ui-icon--16" src="assets/icon-arrow-down.svg" alt="" />
+        </button>
+        <button class="location-control" type="button">
+          <img class="ui-icon ui-icon--14" src="assets/icon-location.svg" alt="" />
+          <span>Москва</span>
+        </button>
+      </div>
+
+      <nav class="main-nav" aria-label="Основная навигация">
+        <a href="#">Проекты</a>
+        <a href="#">Квартиры</a>
+        <a href="#">Акции</a>
+        <a href="#">Способы покупки</a>
+        <a href="#">О компании</a>
+        <a href="#">Контакты</a>
+      </nav>
+
+      <div class="header-cluster header-cluster--end">
+        <a class="phone" href="tel:+74951274098">+7 495 127 40 98</a>
+        <button class="icon-button" type="button" aria-label="Избранное">
+          <img class="ui-icon ui-icon--16" src="assets/icon-heart.svg" alt="" />
+        </button>
+        <button class="menu-button" type="button">
+          <span>Меню</span>
+          <img class="ui-icon ui-icon--16 menu-icon" src="assets/icon-menu.svg" alt="" />
+        </button>
+      </div>
+    </header>
+
+    <main>
+      <section class="hero" id="hero" data-stage="start" aria-label="Главный экран">
+        <div class="scene intro-scene" aria-hidden="true">
+          <div class="intro-content">
+            <h1 class="intro-title">
+              <span class="title-line title-line--one">
+                <span>Мы строим</span>
+                <span class="hero-logo" data-node-id="2545:13197" aria-hidden="true">
+                  <img src="assets/logo-a101.svg" alt="" />
+                </span>
+                <span>города,</span>
+              </span>
+              <span class="title-line title-line--two">
+                <span>в которых</span>
+                <img class="quote-mark" src="assets/quote-mark.svg" alt="" />
+                <span>хочется жить</span>
+              </span>
+            </h1>
+            <p class="intro-description">
+              Создаём пространства, сообщества, связи.<br />
+              Каждый проект — единая комфортная среда для жизни, работы и отдыха
+            </p>
+            <a class="primary-button" data-node-id="2545:13204" href="#final">Выбрать квартиру</a>
+          </div>
+        </div>
+
+        <span class="impact-ripple" aria-hidden="true"></span>
+
+        <div class="scene video-scene" aria-hidden="true">
+          <div class="video-poster" role="img" aria-label="Видеосцена A101">
+            <div class="video-poster__label">
+              <strong>A101</strong>
+              <span>офис<br />продаж</span>
+            </div>
+          </div>
+          <div class="skip-cursor">
+            <button class="skip-button" type="button" data-action="skip" data-node-id="2698:4695" aria-label="Пропустить" tabindex="-1">
+              <span class="skip-button__label">Пропустить</span>
+            </button>
+          </div>
+        </div>
+
+        <div class="scene final-scene" id="final">
+          <div class="final-scene__image" aria-hidden="true"></div>
+
+          <div class="final-content">
+            <div class="final-copy">
+              <h2 class="final-title">
+                <span class="title-line title-line--one">
+                  <span>Мы строим</span>
+                  <span class="inline-logo" aria-hidden="true">
+                    <img src="assets/logo-a101.svg" alt="" />
+                  </span>
+                  <span>города,</span>
+                </span>
+                <span class="title-line title-line--two">
+                  <span>в которых</span>
+                  <img class="quote-mark quote-mark--final" src="assets/quote-mark.svg" alt="" />
+                  <span>хочется жить</span>
+                </span>
+              </h2>
+              <p class="final-description">
+                Создаём пространства, сообщества, связи. Каждый проект —<br />
+                единая комфортная среда для жизни, работы и отдыха
+              </p>
+            </div>
+            <a class="primary-button" href="#tour">Перейти в 3D тур</a>
+          </div>
+
+          <div class="news-widget" data-news-widget>
+            <div class="news-launcher">
+              <button
+                class="news-trigger news-trigger--icon"
+                type="button"
+                data-news-open
+                aria-label="Открыть акции и новости"
+                aria-controls="news-panel"
+                aria-expanded="false"
+              >
+                <img class="news-bell" src="assets/icon-bell.svg" alt="" />
+              </button>
+              <button
+                class="news-trigger news-trigger--label"
+                type="button"
+                data-news-open
+                aria-controls="news-panel"
+                aria-expanded="false"
+              >
+                <span>Акции и новости</span>
+                <img class="ui-icon ui-icon--20" src="assets/icon-news-arrow.svg" alt="" />
+              </button>
+            </div>
+
+            <aside
+              class="news-panel"
+              id="news-panel"
+              data-node-id="2559:15251"
+              aria-label="Акции и новости"
+              aria-hidden="true"
+            >
+              <div class="news-panel__header" data-node-id="2559:15252">
+                <div class="news-tabs" aria-label="Категории публикаций" data-node-id="2559:15253">
+                  <span class="news-tab news-tab--active">Акции</span>
+                  <span class="news-tab">Новости</span>
+                </div>
+                <button class="news-panel__close" type="button" data-news-close aria-label="Закрыть акции и новости">
+                  <img class="ui-icon ui-icon--16" src="assets/icon-close.svg" alt="" />
+                </button>
+              </div>
+
+              <div class="news-list" data-node-id="2559:15256">
+                <a class="news-card" href="#new-project" data-node-id="2559:15257">
+                  <span class="news-card__content">
+                    <span class="news-card__category">Акция</span>
+                    <span class="news-card__title">Ждём новый проект!<br />Бизнес-класс в пределах МКАД</span>
+                  </span>
+                  <span class="news-card__media">
+                    <img class="news-card__image news-card__image--first" src="assets/news-card-01.jpg" alt="" />
+                  </span>
+                </a>
+
+                <a class="news-card" href="#ready-apartments" data-node-id="2559:15262">
+                  <span class="news-card__content">
+                    <span class="news-card__category">Акция</span>
+                    <span class="news-card__title">Готовые квартиры от 8,5 млн ₽</span>
+                  </span>
+                  <span class="news-card__media">
+                    <img class="news-card__image" src="assets/news-card-02.jpg" alt="" />
+                  </span>
+                </a>
+
+                <a class="news-card" href="#agent-a101" data-node-id="2559:15267">
+                  <span class="news-card__content">
+                    <span class="news-card__category">Акция</span>
+                    <span class="news-card__title">Агент А101: даём скидку на квартиру вашим друзьям и знакомым</span>
+                  </span>
+                  <span class="news-card__media">
+                    <img class="news-card__image" src="assets/news-card-03.png" alt="" />
+                  </span>
+                </a>
+              </div>
+            </aside>
+          </div>
+
+          <nav class="promo-stack" aria-label="Полезные разделы" data-node-id="2699:18234">
+            <a class="promo-card promo-card--parking" href="#parking" data-node-id="2641:14750">
+              <img class="promo-card__art" src="assets/promo-card-parking.png" alt="" />
+              <span class="promo-card__title">Машино-места</span>
+              <span class="promo-card__copy">Акция на помещения для бизнеса<br />с невероятно низкой ставкой</span>
+              <span class="promo-card__arrow" aria-hidden="true">
+                <img class="ui-icon ui-icon--16" src="assets/icon-arrow-up-right.svg" alt="" />
+              </span>
+            </a>
+
+            <a class="promo-card promo-card--projects" href="#projects" data-node-id="2641:14761">
+              <img class="promo-card__art" src="assets/promo-card-projects.png" alt="" />
+              <span class="promo-card__title">Проекты</span>
+              <span class="promo-card__copy">Акция на помещения для бизнеса<br />с невероятно низкой ставкой</span>
+              <span class="promo-card__arrow" aria-hidden="true">
+                <img class="ui-icon ui-icon--16" src="assets/icon-arrow-up-right.svg" alt="" />
+              </span>
+            </a>
+
+            <a class="promo-card promo-card--purchase" href="#offers" data-node-id="2641:14772">
+              <img class="promo-card__art" src="assets/promo-card.png" alt="" />
+              <span class="promo-card__title">Способы покупки</span>
+              <span class="promo-card__copy">Акция на помещения для бизнеса<br />с невероятно низкой ставкой</span>
+              <span class="promo-card__arrow" aria-hidden="true">
+                <img class="ui-icon ui-icon--16" src="assets/icon-arrow-up-right.svg" alt="" />
+              </span>
+            </a>
+          </nav>
+
+          <button class="replay-button" type="button" data-action="replay">
+            <span aria-hidden="true">↻</span>
+            <span>Повторить интро</span>
+          </button>
+        </div>
+      </section>
+    </main>
+
+    <p class="sr-only" id="animation-status" aria-live="polite"></p>
+  </body>
+</html>
